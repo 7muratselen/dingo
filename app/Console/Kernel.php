@@ -13,9 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        // deneme test 125 126 127
-     ];
-
+        // Bugün hava çok güzelmiş
+];
     /**
      * Define the application's command schedule.
      *
