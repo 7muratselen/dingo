@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        // deneme test 125 126 127 128
+        // deneme test 125 126 127 128 129
      ];
 
     /**
