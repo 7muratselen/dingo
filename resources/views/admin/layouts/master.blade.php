@@ -681,12 +681,14 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
 
-<!-- Page level plugins -->
+
+<!--
+ Page level plugins
 <script src="vendor/chart.js/Chart.min.js"></script>
 
-<!-- Page level custom scripts -->
+&lt;!&ndash; Page level custom scripts &ndash;&gt;
 <script src="js/demo/chart-area-demo.js"></script>
-<script src="js/demo/chart-pie-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>-->
 
 </body>
 

@@ -12,4 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    mix.combine([
+        'resources/assets/admin/vendor/jquery/jquery.min.js',
+        'resources/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js',
+        'resources/assets/admin/vendor/jquery-easing/jquery.easing.min.js',
+        'resources/assets/admin/js/sb-admin-2.min.js',
+    ],'public/admin/js/sb-admin.js')
+    mix.combine([
+        'resources/assets/admin/vendor/fontawesome-free/css/all.min.css',
+        'resources/assets/admin/css/sb-admin-2.min.css',
+    ],  'public/admin/css/sb-admin.css')
+    .sourceMaps();
+mix.version()
+    .browserSync('dingo.test');
+
