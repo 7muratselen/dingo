@@ -17,11 +17,11 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js',
         'resources/assets/admin/vendor/jquery-easing/jquery.easing.min.js',
         'resources/assets/admin/js/sb-admin-2.min.js',
-    ],'public/admin/js/sb-admin.js')
+    ],'public/backend/js/sb-admin.js')
     mix.combine([
         'resources/assets/admin/vendor/fontawesome-free/css/all.min.css',
         'resources/assets/admin/css/sb-admin-2.min.css',
-    ],  'public/admin/css/sb-admin.css')
+    ],  'public/backend/css/sb-admin.css')
     .sourceMaps();
 mix.version()
     .browserSync('dingo.test');
