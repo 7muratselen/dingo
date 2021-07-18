@@ -11,18 +11,30 @@ const mix = require('laravel-mix');
  |
  */
 
+
+mix.copy('resources/assets/admin/vendor/fontawesome-free/webfonts', 'public/admins/webfonts');
+mix.copy('resources/assets/admin/img', 'public/admins/img');
+mix.copy('resources/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js.map', 'public/admins/js');
+mix.copy('resources/assets/admin/vendor/chartjs', 'public/admins/js/chartjs');
+mix.copy('resources/assets/admin/js/demo', 'public/admins/js/demo');
+
 mix.js('resources/js/app.js', 'public/js')
-    mix.combine([
+    .combine([
         'resources/assets/admin/vendor/jquery/jquery.min.js',
         'resources/assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js',
         'resources/assets/admin/vendor/jquery-easing/jquery.easing.min.js',
+        'resources/assets/admin/js/demo/chart-area-demo.js',
+        'resources/assets/admin/js/demo/chart-bar-demo.js',
+        'resources/assets/admin/js/demo/chart-pie-demo.js',
+        'resources/assets/admin/js/demo/datatables-demo.js',
         'resources/assets/admin/js/sb-admin-2.min.js',
-    ],'public/backend/js/sb-admin.js')
-    mix.combine([
+    ],'public/admins/js/sb-admin.js')
+        .styles([
         'resources/assets/admin/vendor/fontawesome-free/css/all.min.css',
         'resources/assets/admin/css/sb-admin-2.min.css',
-    ],  'public/backend/css/sb-admin.css')
-    .sourceMaps();
+    ],  'public/admins/css/sb-admin.css')
+    .sourceMaps()
+
 mix.version()
     .browserSync('dingo.test');
 

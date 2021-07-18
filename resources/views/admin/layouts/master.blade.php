@@ -14,7 +14,7 @@
     <!-- Custom fonts for this template-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="{{mix('backend/css/sb-admin.css')}}" rel="stylesheet">
+    <link href="{{mix('admins/css/sb-admin.css')}}" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -601,7 +601,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="text-center">
-                                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
+                                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="admins/img/undraw_posting_photo.svg" alt="">
                                 </div>
                                 <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
                                 <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
@@ -670,16 +670,15 @@
 
 
 <!-- Custom scripts for all pages-->
-<script src="{{mix('backend/js/sb-admin.js')}}"></script>
+<script src="{{mix('admins/js/sb-admin.js')}}"></script>
 
 
-<!--
 Page level plugins
-<script src="vendor/chart.js/Chart.min.js"></script>
+<script src="{{asset('admins/js/chartjs/chart.min.js')}}"></script>
 
-&lt;!&ndash; Page level custom scripts &ndash;&gt;
-<script src="js/demo/chart-area-demo.js"></script>
-<script src="js/demo/chart-pie-demo.js"></script>-->
+<!-- Page level custom scripts -->
+<script src="{{asset('admins/js/demo/chart-area-demo.js')}}"></script>
+<script src="{{asset('admins/js/demo/chart-pie-demo.js')}}"></script>
 
 </body>
 
